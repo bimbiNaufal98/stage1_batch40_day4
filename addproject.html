@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="addproject.css">
+    <title>Selamat Datang day4</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="navbarLeft">
+                <img src="Assets/logo Dumbwaysid.png" alt="logo Dumbways.id" width="40px">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#"><strong>My Project</strong></a>
+                </li>
+            </div>
+            <div class="navbarRight">
+                <li>
+                    <a href="contact.html"><button>Contact Me</button></a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <section>
+        <div class="input">
+            <form>
+                <h1>ADD MY PROJECT</h1>
+                <div class="inputName">
+                    <label for="inputName">Project Name</label>
+                    <input type="text" id="inputName" required>
+                </div>
+                <div class="startDateEndDate">
+                    <div class="startDate">
+                        <label for="inputEmail">Start Date</label>
+                        <input type="date" id="inputEmail" required>
+                    </div>
+                    <div class="endDate">
+                        <label for="inputEmail">End Date</label>
+                        <input type="date" id="inputEmail" required>
+                    </div>
+                </div>
+                <div class="inputMessage">
+                    <label for="inputMessage">Your Message</label>
+                    <textarea id="inputMessage"></textarea>
+                </div>
+                <div>
+                    <label class="inputTechnologies">Technologies</label>
+                    <div class="inputTechnologiesContainer">
+                        <div>
+                            <label for="inputTechnologiesNodeJs"><input type="checkbox" id="inputTechnologiesNodeJs" value="fa-brands fa-node-js"> Node Js</label>
+                        </div>
+                        <div>
+                            <label for="inputTechnologiesNextjs"><input type="checkbox" id="inputTechnologiesNextjs" value="fa-brands fa-next-js"> Next Js</label>
+                        </div>
+                    </div>
+                    <div class="inputTechnologiesContainer">
+                        <div>
+                            <label for="inputTechnologiesReactjs"><input type="checkbox" id="inputTechnologiesReactjs" value="fa-brands fa-react-js"> React Js</label>
+                        </div>
+                        <div>
+                            <label for="inputTechnologiesAngularjs"><input type="checkbox" id="inputTechnologiesAngularjs" value="fa-brands fa-angular-js"> Angular Js</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="uploadImageMain">
+                    <label class="uploadImageMainTwo">Upload Image</label>
+                    <div class="uploadImage">
+                        <label>
+                        <input type="file" id="uploadImage" hidden>
+                            <div class="uploadImageContainer">
+                                <div style="padding: 10px 20px 10px 20px; color: rgb(114, 114, 114); background-color:rgb(172, 172, 172); font-size: 20px;">Choose</div>
+                            </div>
+                            <img src="Assets/pin.png" alt="logoDownloadPin"style="width:30px; padding: 10px; display: flex; justify-content: flex-end;"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="submitData()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="myProject">
+        <h1>My Project</h1>
+        <div class="myProjectMain">
+            <div class="myProjectDetail">
+                    <div class="cardProject">
+                        <div style="width: 100%; height: 270px; overflow: hidden; position: relative; border-radius: 10px;">
+                            <img src="Assets/kapal.jpg" style="max-width: 100%; position: absolute; top: -60px; border-radius: 10px;"/>
+                        </div>
+                        <p style="font-size: 25px; font-weight: bold; font-family: 'Segoe UI';">Hello World</p>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114)">17 September 2022 19:45 WIB | Bimbi Naufal</p><br/>
+                        <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur similique, reiciendis aperiam culpa consequuntur! Repellendus dolor amet voluptas molestiae reprehenderit. Qui ducimus ex libero dolorum exercitationem dicta explicabo eius!</p><br/>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114); text-align: end;">durasi 3 bulan </p><br/> 
+                        <div class="iconCard">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="editDelete">
+                            <div class="editDeleteContainer">
+                                <a href="#"><button>Edit</button></a>
+                            </div>
+                            <div class="editDeleteContainerTwo">
+                                <a href="#"><button>Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardProject">
+                        <div style="width: 100%; height: 270px; overflow: hidden; position: relative; border-radius: 10px;">
+                            <img src="Assets/kapal.jpg" style="max-width: 100%; position: absolute; top: -60px; border-radius: 10px;"/>
+                        </div>
+                        <p style="font-size: 25px; font-weight: bold; font-family: 'Segoe UI';">Hello World</p>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114)">17 September 2022 19:45 WIB | Bimbi Naufal</p><br/>
+                        <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur similique, reiciendis aperiam culpa consequuntur! Repellendus dolor amet voluptas molestiae reprehenderit. Qui ducimus ex libero dolorum exercitationem dicta explicabo eius!</p><br/>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114); text-align: end;">durasi 3 bulan </p><br/> 
+                        <div class="iconCard">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="editDelete">
+                            <div class="editDeleteContainer">
+                                <a href="#"><button>Edit</button></a>
+                            </div>
+                            <div class="editDeleteContainerTwo">
+                                <a href="#"><button>Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardProject">
+                        <div style="width: 100%; height: 270px; overflow: hidden; position: relative; border-radius: 10px;">
+                            <img src="Assets/kapal.jpg" style="max-width: 100%; position: absolute; top: -60px; border-radius: 10px;"/>
+                        </div>
+                        <p style="font-size: 25px; font-weight: bold; font-family: 'Segoe UI';">Hello World</p>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114)">17 September 2022 19:45 WIB | Bimbi Naufal</p><br/>
+                        <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur similique, reiciendis aperiam culpa consequuntur! Repellendus dolor amet voluptas molestiae reprehenderit. Qui ducimus ex libero dolorum exercitationem dicta explicabo eius!</p><br/>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114); text-align: end;">durasi 3 bulan </p><br/> 
+                        <div class="iconCard">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="editDelete">
+                            <div class="editDeleteContainer">
+                                <a href="#"><button>Edit</button></a>
+                            </div>
+                            <div class="editDeleteContainerTwo">
+                                <a href="#"><button>Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardProject">
+                        <div style="width: 100%; height: 270px; overflow: hidden; position: relative; border-radius: 10px;">
+                            <img src="Assets/kapal.jpg" style="max-width: 100%; position: absolute; top: -60px; border-radius: 10px;"/>
+                        </div>
+                        <p style="font-size: 25px; font-weight: bold; font-family: 'Segoe UI';">Hello World</p>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114)">17 September 2022 19:45 WIB | Bimbi Naufal</p><br/>
+                        <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur similique, reiciendis aperiam culpa consequuntur! Repellendus dolor amet voluptas molestiae reprehenderit. Qui ducimus ex libero dolorum exercitationem dicta explicabo eius!</p><br/>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114); text-align: end;">durasi 3 bulan </p><br/> 
+                        <div class="iconCard">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="editDelete">
+                            <div class="editDeleteContainer">
+                                <a href="#"><button>Edit</button></a>
+                            </div>
+                            <div class="editDeleteContainerTwo">
+                                <a href="#"><button>Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardProject">
+                        <div style="width: 100%; height: 270px; overflow: hidden; position: relative; border-radius: 10px;">
+                            <img src="Assets/kapal.jpg" style="max-width: 100%; position: absolute; top: -60px; border-radius: 10px;"/>
+                        </div>
+                        <p style="font-size: 25px; font-weight: bold; font-family: 'Segoe UI';">Hello World</p>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114)">17 September 2022 19:45 WIB | Bimbi Naufal</p><br/>
+                        <p class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur similique, reiciendis aperiam culpa consequuntur! Repellendus dolor amet voluptas molestiae reprehenderit. Qui ducimus ex libero dolorum exercitationem dicta explicabo eius!</p><br/>
+                        <p style="font-size:15px ; color:rgb(114, 114, 114); text-align: end;">durasi 3 bulan </p><br/> 
+                        <div class="iconCard">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="editDelete">
+                            <div class="editDeleteContainer">
+                                <a href="#"><button>Edit</button></a>
+                            </div>
+                            <div class="editDeleteContainerTwo">
+                                <a href="#"><button>Delete</button></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
